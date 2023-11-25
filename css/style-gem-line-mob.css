@@ -1,0 +1,188 @@
+body {
+  font-size: 10px;
+  background-color: #f2f1ef;
+}
+
+/* ==================== */
+.mob-wrapper {
+  padding-top: 8px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.svg {
+  width: 90%;
+  position: absolute;
+}
+.svg-2 {
+  width: 90%;
+  position: absolute;
+  pointer-events: none;
+}
+/* ===========colors========== */
+.colors {
+  width: 80%;
+  position: relative;
+  aspect-ratio: 0.8/1.65;
+  pointer-events: none;
+}
+.colors div::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.red {
+  bottom: 30%;
+  left: 90%;
+  position: absolute;
+}
+.yellow {
+  bottom: 20%;
+  left: 90%;
+  position: absolute;
+}
+.blue {
+  bottom: 10%;
+  left: 90%;
+  position: absolute;
+}
+.red::before {
+  background-image: url(../images/svg/red.svg);
+}
+.yellow::before {
+  background-image: url(../images/svg/yellow.svg);
+}
+.blue::before {
+  background-image: url(../images/svg/blue.svg);
+}
+
+/* ===========figures========== */
+.figures {
+  position: absolute;
+  display: flex;
+  left: 0%;
+  width: 70%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 0;
+  aspect-ratio: 0.8/1.9;
+}
+.figures div {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5%;
+}
+.figures div:not(:first-child) {
+  margin-left: 15px;
+}
+.figures div::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rhombus::before {
+  background-image: url(../images/svg/rectangle.svg);
+}
+.circle::before {
+  background-image: url(../images/svg/circle.svg);
+}
+.triangle::before {
+  background-image: url(../images/svg/triangle.svg);
+}
+
+/* =========tasks-wrap=========== */
+.tasks-wrap {
+  width: 90%;
+  position: absolute;
+  font-size: 120%;
+}
+
+.task {
+  width: 68%;
+  margin-bottom: 0px;
+}
+.task::before {
+  display: inline-flex;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  background-color: #0085ff;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 140%;
+  margin-right: 3px;
+}
+
+.task:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.task-1 {
+  margin-top: 2px;
+}
+.task-7 {
+  width: 62%;
+}
+.task-8 {
+  width: 50%;
+}
+
+.task-1::before {
+  content: '1';
+}
+.task-1::after {
+  content: 'Two squares occupy the cell, the sum of which is 5';
+}
+.task-2::before {
+  content: '2';
+}
+.task-2::after {
+  content: 'Two triangles occupy the cell, the sum of which is 13';
+}
+.task-3::before {
+  content: '3';
+}
+.task-3::after {
+  content: 'Two circles occupy the cell, the product of which is 42';
+}
+.task-4::before {
+  content: '4';
+}
+.task-4::after {
+  content: 'Two squares occupy the cell, the product of which is 24';
+}
+.task-5::before {
+  content: '5';
+}
+.task-5::after {
+  content: 'Two triangles occupy the cell, the product of which is 20';
+}
+.task-6::before {
+  content: '6';
+}
+.task-6::after {
+  content: 'Two yellow shapes occupy the cell, the sum of which is 7';
+}
+.task-7::before {
+  content: '7';
+}
+.task-7::after {
+  content: 'Two blue shapes occupy the cell, the sum of which is 23';
+}
+.task-8::before {
+  content: '8';
+}
+.task-8::after {
+  content: 'Two blue shapes occupy the cell, the sum of which is 23';
+}

@@ -1,0 +1,28 @@
+body {
+  font-size: 30px;
+  line-height: 1.2;
+  background-color: #f2f1ef;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 528px;
+  margin: 25px auto;
+  padding: 25px;
+  border: 1px solid black;
+}
+.svg {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 0 8px 5px 0;
+}
+.text p::first-letter {
+  margin-left: -21px;
+  opacity: 0;
+  color: transparent;
+}

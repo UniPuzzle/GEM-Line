@@ -1,9 +1,15 @@
 body {
   font-size: 10px;
   background-color: #f2f1ef;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ==================== */
+.header-mob {
+  width: 100vw;
+  height: 10vw;
+  background-color: #ababab;
+}
 .mob-wrapper {
   padding-top: 8px;
   position: relative;
@@ -13,43 +19,48 @@ body {
   justify-content: center;
 }
 .svg {
-  width: 90%;
+  width: 85%;
   position: absolute;
+  right: 3%;
 }
 .svg-2 {
-  width: 90%;
+  width: 85%;
   position: absolute;
+  right: 3%;
   pointer-events: none;
 }
 /* ===========colors========== */
 .colors {
   width: 80%;
-  position: relative;
-  aspect-ratio: 0.8/1.65;
+  right: 0;
+  position: absolute;
+  aspect-ratio: 0.8/1.55;
   pointer-events: none;
+  z-index: -20;
 }
 .colors div::before {
   content: "";
-  width: 50px;
-  height: 37px;
+  width: 66px;
+  height: 52px;
+  /* background-color: green; */
   background-size: contain;
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
 }
 .red {
-  bottom: 25%;
-  left: 90%;
+  bottom: 30%;
+  left: 74%;
   position: absolute;
 }
 .yellow {
-  bottom: 17%;
-  left: 90%;
+  bottom: 20.5%;
+  left: 74%;
   position: absolute;
 }
 .blue {
-  bottom: 9%;
-  left: 90%;
+  bottom: 10.8%;
+  left: 74%;
   position: absolute;
 }
 .red::before {
@@ -73,10 +84,12 @@ body {
   margin: 0;
   aspect-ratio: 0.8/1.9; */
   position: absolute;
+  left: 0;
   width: 80%;
   margin: 0;
   pointer-events: none;
-  aspect-ratio: 0.8/1.65;
+  aspect-ratio: 0.8/1.55;
+  z-index: -10;
 }
 .figures div {
   /* width: 40px;
@@ -107,27 +120,28 @@ body {
   background-image: url(../images/svg/triangle.svg);
 }
 .rhombus {
-  bottom: 18%;
-  left: 62%;
+  bottom: 10%;
+  left: 55%;
 }
 .circle {
-  bottom: 10%;
-  left: 51%;
+  bottom: 16%;
+  left: 77%;
 }
 .triangle {
-  bottom: 10%;
-  left: 71%;
+  bottom: 8%;
+  left: 33%;
 }
 
 /* =========tasks-wrap=========== */
 .tasks-wrap {
   width: 90%;
   position: absolute;
-  font-size: 15px;
+  font-size: 4.3vw;
+  left: 3%;
 }
 
 .task {
-  width: 73%;
+  width: 80%;
   margin-bottom: 0px;
 }
 .task::before {
@@ -144,16 +158,19 @@ body {
 }
 
 .task:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 .task-1 {
   margin-top: 2px;
 }
+.task-6 {
+  width: 78%;
+}
 .task-7 {
-  width: 62%;
+  width: 73%;
 }
 .task-8 {
-  width: 50%;
+  width: 60%;
 }
 
 .task-1::before {

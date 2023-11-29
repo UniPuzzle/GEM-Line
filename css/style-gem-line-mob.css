@@ -7,7 +7,7 @@ body {
 /* ==================== */
 .header-mob {
   width: 100vw;
-  height: 10vw;
+  height: 15vw;
   background-color: #ababab;
 }
 .mob-wrapper {
@@ -21,12 +21,12 @@ body {
 .svg {
   width: 85%;
   position: absolute;
-  right: 3%;
+  right: 7%;
 }
 .svg-2 {
   width: 85%;
   position: absolute;
-  right: 3%;
+  right: 7%;
   pointer-events: none;
 }
 /* ===========colors========== */
@@ -49,17 +49,17 @@ body {
   background-position: center;
 }
 .red {
-  bottom: 30%;
+  bottom: 32%;
   left: 74%;
   position: absolute;
 }
 .yellow {
-  bottom: 20.5%;
+  bottom: 22%;
   left: 74%;
   position: absolute;
 }
 .blue {
-  bottom: 10.8%;
+  bottom: 12%;
   left: 74%;
   position: absolute;
 }
@@ -102,12 +102,16 @@ body {
 }
 .figures div::before {
   content: "";
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   background-size: contain;
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
+}
+.figures .rhombus::before {
+  width: 51px;
+  height: 51px;
 }
 
 .rhombus::before {
@@ -120,28 +124,28 @@ body {
   background-image: url(../images/svg/triangle.svg);
 }
 .rhombus {
-  bottom: 10%;
-  left: 56%;
+  bottom: 11.1%;
+  left: 60%;
 }
 .circle {
-  bottom: 16%;
-  left: 77%;
+  bottom: 11%;
+  left: 80%;
 }
 .triangle {
-  bottom: 8%;
-  left: 33%;
+  bottom: 10.8%;
+  left: 42.4%;
 }
 
 /* =========tasks-wrap=========== */
 .tasks-wrap {
-  width: 90%;
+  /* width: 90%; */
   position: absolute;
   font-size: 4.3vw;
-  left: 3%;
+  left: 8%;
 }
 
 .task {
-  width: 80%;
+  width: 68%;
   margin-bottom: 0px;
 }
 .task::before {
@@ -153,24 +157,21 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 17px;
+  font-size: 15px;
   margin-right: 3px;
 }
 
 .task:not(:last-child) {
-  margin-bottom: 0.7rem;
+  margin-bottom: 1.2rem;
 }
 .task-1 {
   margin-top: 2px;
 }
 .task-6 {
-  width: 78%;
+  width: 63%;
 }
 .task-7 {
-  width: 73%;
-}
-.task-8 {
-  width: 60%;
+  width: 51%;
 }
 
 .task-1::before {
@@ -215,10 +216,5 @@ body {
 .task-7::after {
   content: "Two blue shapes occupy the cell, the sum of which is 23";
 }
-.task-8::before {
-  content: "8";
-}
-.task-8::after {
-  content: "Two blue shapes occupy the cell, the sum of which is 23";
-}
+
 /* ======================= */

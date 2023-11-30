@@ -1,0 +1,171 @@
+body {
+  font-size: 30px;
+  line-height: 1.2;
+  background-color: #f2f1ef;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.line1 {
+  top: 50%;
+  width: 100%;
+  position: absolute;
+  outline: 1px dotted rgb(255, 255, 255);
+}
+.line2 {
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  outline: 1px dotted rgb(255, 255, 255);
+  rotate: 0deg;
+}
+.wrapper {
+  max-width: 100%;
+  height: 100vh;
+  padding: 15px;
+}
+
+/* ======================================= */
+
+.playfield {
+  width: 330px;
+  height: 330px;
+  outline: 1px solid black;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  background-color: #e2e2e2;
+}
+
+.elem {
+  position: absolute;
+  display: flex;
+  width: 14%;
+  height: 14%;
+  border: 0.7px solid black;
+  border-radius: 50%;
+}
+
+/* =================== */
+
+.klc_1 {
+  top: 68%;
+  left: 81%;
+}
+.klc_2 {
+  top: 68%;
+  left: 67%;
+}
+.klc_3 {
+  top: 68%;
+  left: 53%;
+}
+.klc_4 {
+  top: 68%;
+  left: 39%;
+}
+.klc_5 {
+  top: 68%;
+  left: 25%;
+}
+.klc_6 {
+  top: 56%;
+  left: 32%;
+}
+.klc_7 {
+  top: 56%;
+  left: 46%;
+}
+.klc_8 {
+  top: 56%;
+  left: 60%;
+}
+.klc_9 {
+  top: 56%;
+  left: 74%;
+}
+.klc_10 {
+  top: 44%;
+  left: 67%;
+}
+.klc_11 {
+  top: 44%;
+  left: 53%;
+}
+.klc_12 {
+  top: 44%;
+  left: 39%;
+}
+.klc_13 {
+  top: 32%;
+  left: 46%;
+}
+.klc_14 {
+  top: 32%;
+  left: 60%;
+}
+.klc_15 {
+  top: 20%;
+  left: 53%;
+}
+/* =============== */
+.blob {
+  position: absolute;
+  display: flex;
+  width: 14%;
+  height: 14%;
+  padding: 1px;
+  /* border: 0.7px solid black; */
+  border-radius: 50%;
+}
+
+.blob::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  /* position: absolute;
+  border-radius: 50%; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../kolocells-images/blob.svg);
+}
+.blob_1 {
+  transform: rotate(240deg);
+  top: 85%;
+  left: 76.5%;
+}
+.blob_2 {
+  transform: rotate(240deg);
+  top: 85%;
+  left: 62.5%;
+}
+.blob_3 {
+  top: 68%;
+  left: 6%;
+}
+.blob_4 {
+  top: 56%;
+  left: 13%;
+}
+.blob_5 {
+  top: 44%;
+  left: 20%;
+}
+.blob_6 {
+  transform: rotate(120deg);
+  top: 3%;
+  left: 62.5%;
+}
+.blob_7 {
+  transform: rotate(120deg);
+  top: 15%;
+  left: 69.5%;
+}
+.blob_8 {
+  transform: rotate(120deg);
+  top: 27%;
+  left: 76.5%;
+}

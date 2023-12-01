@@ -4,9 +4,17 @@ body {
   background-color: #f2f1ef;
   font-family: Arial, Helvetica, sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+ul,
 p {
   margin: 0;
   padding: 0;
+}
+ul {
+  list-style: none;
 }
 .line1 {
   top: 50%;
@@ -21,29 +29,93 @@ p {
   outline: 1px dotted rgb(255, 255, 255);
   rotate: 0deg;
 }
+
 .wrapper {
   max-width: 100%;
   height: 100vh;
-  padding: 15px;
+  /* padding: 15px; */
 }
 
-/* ======================================= */
+/* ======header start====== */
+.header {
+  background-color: #094eab;
+  width: 100vw;
+  height: 44px;
+}
+/* ======header end====== */
+
+/* =======goal start======= */
+.goal {
+  display: flex;
+
+  width: 96vw;
+  background-color: #ababab;
+  margin-left: auto;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+}
+.goal-title {
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  writing-mode: vertical-rl;
+  transform-origin: center;
+  transform: rotate(-180deg);
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: 0px;
+  padding: 10px;
+}
+.goal-description {
+  font-size: 8px;
+  width: 96%;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  color: #000000;
+}
+.description-title {
+  padding-left: 20px;
+  padding-right: 8px;
+  margin-bottom: 10px;
+  margin-top: 7px;
+}
+
+.description-list {
+  padding-left: 20px;
+  padding-right: 8px;
+  line-height: 1.4;
+  margin-bottom: 7px;
+}
+
+.description-text {
+  font-size: 10px;
+}
+/* =======goal end======= */
+
+/* ==========playfield start=========== */
 
 .playfield {
-  width: 330px;
-  height: 330px;
-  outline: 1px solid black;
+  width: 80vw;
+  aspect-ratio: 1/1;
+  /* height: 100vw; */
+  /* outline: 1px solid black; */
   margin: 0 auto;
   display: flex;
   position: relative;
-  background-color: #e2e2e2;
+  /* background-color: #e2e2e2; */
 }
 
 .elem {
   position: absolute;
   display: flex;
   width: 14%;
-  height: 14%;
+  aspect-ratio: 1/1;
+  /* height: 14%; */
   border: 0.7px solid black;
   border-radius: 50%;
 }
@@ -115,7 +187,8 @@ p {
   position: absolute;
   display: flex;
   width: 14%;
-  height: 14%;
+  aspect-ratio: 1/1;
+  /* height: 14%; */
   padding: 1px;
   /* border: 0.7px solid black; */
   border-radius: 50%;
@@ -169,3 +242,104 @@ p {
   top: 27%;
   left: 76.5%;
 }
+/* ===========playfield end========== */
+
+/* =============additional start========== */
+.additional {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.clues {
+  width: 38vw;
+  /* height: 30vw; */
+  background-color: #ababab;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+}
+.clues-title {
+  font-size: 10px;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.clues-text-wrapper {
+  width: auto;
+  margin: 0 2px 2px 0;
+  background-color: #ffffff;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+}
+.clues-text {
+  display: flex;
+  font-size: 8px;
+  color: #000000;
+  padding: 2px;
+  text-align: left;
+  align-items: center;
+}
+
+.clues-text span {
+  position: relative;
+  display: block;
+  width: 50%;
+  aspect-ratio: 1/1;
+  margin-right: 10px;
+}
+.clues-text span::before {
+  content: "";
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-size: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* border-radius: 50%; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../kolocells-images/blob.svg);
+}
+
+.clues-positive {
+}
+.clues-negative {
+}
+/* ============ */
+.colors {
+  width: 60vw;
+  /* height: 30vw; */
+  background-color: #ababab;
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.colors-title {
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  writing-mode: vertical-rl;
+  transform-origin: center;
+  transform: rotate(-180deg);
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: 0.9px;
+  padding: 6px;
+}
+.colors-content-wrapper {
+  width: 100%;
+  height: 96%;
+  /* padding: 7px 0px 7px 0; */
+  background-color: #ffffff;
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+}
+.colors-content {
+}
+.clues-content {
+}
+/* =============additional end========== */

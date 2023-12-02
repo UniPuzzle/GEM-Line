@@ -48,10 +48,10 @@ ul {
 .goal {
   display: flex;
 
-  width: 96vw;
+  width: 100vw;
   background-color: #ababab;
   margin-left: auto;
-  border-top-left-radius: 2vw;
+  /* border-top-left-radius: 2vw; */
   border-bottom-left-radius: 2vw;
 }
 .goal-title {
@@ -65,10 +65,13 @@ ul {
   color: #ffffff;
   line-height: 1;
   letter-spacing: 0px;
-  padding: 10px;
+  padding: 7px;
+}
+.goal-title h2 {
+  font-weight: 100;
 }
 .goal-description {
-  font-size: 8px;
+  font-size: 14px;
   width: 96%;
   background-color: #ffffff;
   margin-left: auto;
@@ -79,28 +82,29 @@ ul {
   color: #000000;
 }
 .description-title {
-  padding-left: 20px;
+  padding-left: 10px;
   padding-right: 8px;
   margin-bottom: 10px;
   margin-top: 7px;
+  font-weight: 100;
 }
 
 .description-list {
-  padding-left: 20px;
+  padding-left: 10px;
   padding-right: 8px;
   line-height: 1.4;
   margin-bottom: 7px;
 }
 
 .description-text {
-  font-size: 10px;
+  font-size: 14px;
 }
 /* =======goal end======= */
 
 /* ==========playfield start=========== */
 
 .playfield {
-  width: 80vw;
+  width: 100vw;
   aspect-ratio: 1/1;
   /* height: 100vw; */
   /* outline: 1px solid black; */
@@ -252,7 +256,7 @@ ul {
   justify-content: space-between;
 }
 .clues {
-  width: 38vw;
+  width: 40vw;
   /* height: 30vw; */
   background-color: #ababab;
   border-top-right-radius: 1vw;
@@ -261,9 +265,10 @@ ul {
 .clues-title {
   font-size: 10px;
   color: #ffffff;
-  padding: 5px;
+  padding: 3px;
   text-align: center;
   text-transform: uppercase;
+  font-weight: 100;
 }
 .clues-text-wrapper {
   width: auto;
@@ -274,7 +279,7 @@ ul {
 }
 .clues-text {
   display: flex;
-  font-size: 8px;
+  font-size: 14px;
   color: #000000;
   padding: 2px;
   text-align: left;
@@ -284,9 +289,9 @@ ul {
 .clues-text span {
   position: relative;
   display: block;
-  width: 50%;
+  width: 30%;
   aspect-ratio: 1/1;
-  margin-right: 10px;
+  margin-right: 7px;
 }
 .clues-text span::before {
   content: "";
@@ -308,7 +313,7 @@ ul {
 }
 /* ============ */
 .colors {
-  width: 60vw;
+  width: 59vw;
   /* height: 30vw; */
   background-color: #ababab;
   border-top-left-radius: 1vw;
@@ -327,8 +332,9 @@ ul {
   text-transform: uppercase;
   color: #ffffff;
   line-height: 1.2;
-  letter-spacing: 0.9px;
-  padding: 6px;
+  letter-spacing: 0.5px;
+  padding: 3px;
+  font-weight: 100;
 }
 .colors-content-wrapper {
   width: 100%;
@@ -337,9 +343,64 @@ ul {
   background-color: #ffffff;
   border-top-left-radius: 1vw;
   border-bottom-left-radius: 1vw;
+  display: flex;
+  align-items: center;
 }
 .colors-content {
+  width: 50%;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-.clues-content {
+.colors-content-list {
+  font-size: 10px;
+  font-weight: 700;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.colors-content-list.end {
+  justify-content: flex-end;
+}
+.colors-content-list span {
+  color: #000000;
+  font-weight: 100;
+  padding-top: 1px;
+}
+.colors-content-list div {
+  border-radius: 50%;
+  padding-top: 1px;
+  height: 5.5vw;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.br {
+  background-color: #7d460d;
+}
+.b {
+  background-color: #22a5f1;
+}
+.y {
+  background-color: #ffe64b;
+}
+.r {
+  background-color: #f1430e;
+}
+.o {
+  background-color: #ff8c20;
+}
+.g {
+  background-color: #66c243;
+}
+.p {
+  background-color: #a72484;
 }
 /* =============additional end========== */

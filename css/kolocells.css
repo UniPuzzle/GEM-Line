@@ -1,8 +1,10 @@
+html,
 body {
   font-size: 30px;
   line-height: 1.2;
   background-color: #f2f1ef;
   font-family: Arial, Helvetica, sans-serif;
+  height: 100dvh;
 }
 h1,
 h2,
@@ -32,8 +34,18 @@ ul {
 
 .wrapper {
   max-width: 100%;
-  height: 100vh;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   /* padding: 15px; */
+}
+.main {
+  flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ======header start====== */
@@ -71,7 +83,7 @@ ul {
   font-weight: 100;
 }
 .goal-description {
-  font-size: 14px;
+  font-size: 3.3vw;
   width: 96%;
   background-color: #ffffff;
   margin-left: auto;
@@ -97,7 +109,7 @@ ul {
 }
 
 .description-text {
-  font-size: 14px;
+  font-size: 3.3vw;
 }
 /* =======goal end======= */
 
@@ -197,54 +209,172 @@ ul {
   /* border: 0.7px solid black; */
   border-radius: 50%;
 }
+.blob.cls {
+  position: absolute;
+  display: flex;
+  width: 9%;
+  aspect-ratio: 1/1;
+  padding: 1px;
 
-.blob::before {
+  border-radius: 100% 0% 100% 100%;
+}
+
+/* .blob::before {
   content: "";
   width: 100%;
   height: 100%;
   background-size: 100%;
-  /* position: absolute;
-  border-radius: 50%; */
+
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../kolocells-images/blob.svg);
+} */
+/* .svg-blob_1 {
+  width: 40px;
+  fill: red;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+} */
+.text {
+  position: absolute;
+  display: flex;
+  width: 14%;
+  font-size: 5vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #f2f1ef;
+  z-index: 1;
 }
 .blob_1 {
   transform: rotate(240deg);
   top: 85%;
   left: 76.5%;
+  fill: #7d460d;
 }
+.text-1 {
+  top: 87%;
+  left: 77.5%;
+}
+
 .blob_2 {
   transform: rotate(240deg);
   top: 85%;
   left: 62.5%;
+  fill: #a72484;
+}
+.text-2 {
+  top: 87%;
+  left: 63.3%;
 }
 .blob_3 {
   top: 68%;
   left: 6%;
+  fill: #7d460d;
+}
+.text-3 {
+  top: 68%;
+  left: 4.5%;
 }
 .blob_4 {
-  top: 56%;
+  transform: rotate(48deg);
+  /* top: 56%;
+  left: 13%; */
+  top: 57.3%;
   left: 13%;
+  background-color: #7d460d;
+}
+.blob_4::before {
+  content: "Br";
+  display: flex;
+  transform: rotate(-48deg);
+
+  font-size: 5vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #f2f1ef;
 }
 .blob_5 {
   top: 44%;
   left: 20%;
+  fill: #7d460d;
+}
+.text-5 {
+  top: 44%;
+  left: 18.5%;
 }
 .blob_6 {
-  transform: rotate(120deg);
+  transform: rotate(162deg);
+  /* top: 3%;
+  left: 62.5%; */
   top: 3%;
-  left: 62.5%;
+  left: 64.8%;
+  background-color: #66c243;
+}
+
+.blob_6::before {
+  content: "G";
+  display: flex;
+  transform: rotate(-162deg);
+
+  font-size: 5vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #f2f1ef;
 }
 .blob_7 {
-  transform: rotate(120deg);
+  /* transform: rotate(120deg); */
+  transform: rotate(162deg);
+  /* top: 15%;
+  left: 69.5%; */
   top: 15%;
-  left: 69.5%;
+  left: 71.8%;
+  background-color: #7d460d;
+}
+.blob_7::before {
+  content: "Br";
+  display: flex;
+  transform: rotate(-162deg);
+
+  font-size: 5vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #f2f1ef;
 }
 .blob_8 {
-  transform: rotate(120deg);
+  transform: rotate(162deg);
   top: 27%;
-  left: 76.5%;
+  left: 78.8%;
+  /* top: 27%;
+  left: 76.5%; */
+  background-color: #66c243;
+}
+.blob_8::before {
+  content: "G";
+  display: flex;
+  transform: rotate(-162deg);
+
+  font-size: 5vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #f2f1ef;
 }
 /* ===========playfield end========== */
 
@@ -256,32 +386,55 @@ ul {
   justify-content: space-between;
 }
 .clues {
-  width: 40vw;
-  /* height: 30vw; */
+  /* width: 40vw;
+
   background-color: #ababab;
   border-top-right-radius: 1vw;
-  border-bottom-right-radius: 1vw;
+  border-bottom-right-radius: 1vw; */
+  width: auto;
+
+  background-color: #ababab;
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 .clues-title {
-  font-size: 10px;
+  /* font-size: 10px;
   color: #ffffff;
   padding: 3px;
   text-align: center;
   text-transform: uppercase;
+  font-weight: 100; */
+  font-size: 3vw;
+  display: flex;
+  justify-content: space-between;
+  writing-mode: vertical-rl;
+  transform-origin: center;
+  transform: rotate(-180deg);
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  padding: 3px;
   font-weight: 100;
 }
 .clues-text-wrapper {
   width: auto;
-  margin: 0 2px 2px 0;
+  height: 96%;
+  margin: 2px 0;
   background-color: #ffffff;
-  border-top-right-radius: 1vw;
-  border-bottom-right-radius: 1vw;
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 .clues-text {
   display: flex;
-  font-size: 14px;
+  font-size: 3vw;
   color: #000000;
-  padding: 2px;
+  padding: 0 4px 0px 2px;
   text-align: left;
   align-items: center;
 }
@@ -304,7 +457,10 @@ ul {
   /* border-radius: 50%; */
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../kolocells-images/blob.svg);
+  background-image: url(../kolocells-images/x.svg);
+}
+.clues-text.clues-negative span::before {
+  background-image: url(../kolocells-images/negativeX.svg);
 }
 
 .clues-positive {
@@ -313,7 +469,7 @@ ul {
 }
 /* ============ */
 .colors {
-  width: 59vw;
+  width: auto;
   /* height: 30vw; */
   background-color: #ababab;
   border-top-left-radius: 1vw;
@@ -321,9 +477,10 @@ ul {
   display: flex;
   text-align: center;
   align-items: center;
+  margin-left: -1%;
 }
 .colors-title {
-  font-size: 10px;
+  font-size: 3vw;
   display: flex;
   justify-content: space-between;
   writing-mode: vertical-rl;
@@ -331,7 +488,7 @@ ul {
   transform: rotate(-180deg);
   text-transform: uppercase;
   color: #ffffff;
-  line-height: 1.2;
+  line-height: 1;
   letter-spacing: 0.5px;
   padding: 3px;
   font-weight: 100;
@@ -357,7 +514,7 @@ ul {
   flex-wrap: wrap;
 }
 .colors-content-list {
-  font-size: 10px;
+  font-size: 3vw;
   font-weight: 700;
   color: #ffffff;
   width: 100%;
@@ -370,12 +527,12 @@ ul {
 .colors-content-list span {
   color: #000000;
   font-weight: 100;
-  padding-top: 1px;
+  padding-top: 2px;
 }
 .colors-content-list div {
   border-radius: 50%;
-  padding-top: 1px;
-  height: 5.5vw;
+  padding-top: 2px;
+  height: 5.4vw;
   aspect-ratio: 1/1;
   display: flex;
   align-items: center;

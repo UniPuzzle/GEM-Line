@@ -100,8 +100,7 @@ ul {
   width: 96%;
   background-color: #ffffff;
   margin-left: auto;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
+  margin: 2px 0;
   border-top-left-radius: 2vw;
   border-bottom-left-radius: 2vw;
   color: #000000;
@@ -130,7 +129,7 @@ ul {
 
 .playfield {
   width: 100vw;
-  aspect-ratio: 1/1;
+  height: 100vw;
   /* height: 100vw; */
   /* outline: 1px solid black; */
   margin: 0 auto;
@@ -142,253 +141,217 @@ ul {
 .elem {
   position: absolute;
   display: flex;
-  width: 14%;
-  aspect-ratio: 1/1;
-  /* height: 14%; */
+  width: 16%;
+  height: 16%;
   border: 0.7px solid black;
   border-radius: 50%;
 }
+/* .elem::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  color: red;
+  transform: translate(-50%, -50%);
+  background: red;
+} */
 
 /* =================== */
 
 .klc_1 {
-  top: 68%;
+  top: 69%;
   left: 81%;
 }
 .klc_2 {
-  top: 68%;
-  left: 67%;
+  top: 69%;
+  left: 65%;
 }
 .klc_3 {
-  top: 68%;
-  left: 53%;
+  top: 69%;
+  left: 49%;
 }
 .klc_4 {
-  top: 68%;
-  left: 39%;
+  top: 69%;
+  left: 33%;
 }
 .klc_5 {
-  top: 68%;
-  left: 25%;
+  top: 69%;
+  left: 17%;
 }
 .klc_6 {
-  top: 56%;
-  left: 32%;
+  top: 55%;
+  left: 25%;
 }
 .klc_7 {
-  top: 56%;
-  left: 46%;
+  top: 55%;
+  left: 41%;
 }
 .klc_8 {
-  top: 56%;
-  left: 60%;
+  top: 55%;
+  left: 57%;
 }
 .klc_9 {
-  top: 56%;
-  left: 74%;
+  top: 55%;
+  left: 73%;
 }
 .klc_10 {
-  top: 44%;
-  left: 67%;
+  top: 41%;
+  left: 65%;
 }
 .klc_11 {
-  top: 44%;
-  left: 53%;
+  top: 41%;
+  left: 49%;
 }
 .klc_12 {
-  top: 44%;
-  left: 39%;
+  top: 41%;
+  left: 33%;
 }
 .klc_13 {
-  top: 32%;
-  left: 46%;
+  top: 27%;
+  left: 41%;
 }
 .klc_14 {
-  top: 32%;
-  left: 60%;
+  top: 27%;
+  left: 57%;
 }
 .klc_15 {
-  top: 20%;
-  left: 53%;
+  top: 13%;
+  left: 49%;
 }
 /* =============== */
+/* .blob {
+  position: absolute;
+  display: flex;
+  width: 14%;
+  aspect-ratio: 1/1;
+  padding: 1px;
+  border-radius: 50%;
+} */
 .blob {
   position: absolute;
-  display: flex;
-  width: 14%;
-  aspect-ratio: 1/1;
-  /* height: 14%; */
-  padding: 1px;
-  /* border: 0.7px solid black; */
-  border-radius: 50%;
-}
-.blob.cls {
-  position: absolute;
-  display: flex;
   width: 9%;
-  aspect-ratio: 1/1;
-  padding: 1px;
-
+  height: 9%;
   border-radius: 100% 0% 100% 100%;
 }
-
-/* .blob::before {
-  content: "";
+.blob::before {
   width: 100%;
   height: 100%;
-  background-size: 100%;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../kolocells-images/blob.svg);
-} */
-/* .svg-blob_1 {
-  width: 40px;
-  fill: red;
-  height: 40px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-} */
-.text {
-  position: absolute;
-  display: flex;
-  width: 14%;
   font-size: 5vw;
-  aspect-ratio: 1/1;
+  font-weight: 700;
+  color: #f2f1ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
+}
+.blob::after {
+  font-size: 5vw;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   color: #f2f1ef;
-  z-index: 1;
-}
-.blob_1 {
-  transform: rotate(240deg);
-  top: 85%;
-  left: 76.5%;
-  fill: #7d460d;
-}
-.text-1 {
-  top: 87%;
-  left: 77.5%;
+  position: absolute;
 }
 
-.blob_2 {
-  transform: rotate(240deg);
-  top: 85%;
-  left: 62.5%;
-  fill: #a72484;
+.blob_1 {
+  transform: rotate(-78deg);
+  top: 88%;
+  left: 77.5%;
+  background-color: #7d460d;
 }
-.text-2 {
-  top: 87%;
-  left: 63.3%;
+.blob_1::before {
+  content: "Br";
+  transform: rotate(78deg);
+}
+.blob_1::after {
+  content: "-";
+  display: flex;
+  top: -24%;
+  left: 27%;
+  transform: rotate(-102deg);
+}
+.blob_2 {
+  transform: rotate(-78deg);
+  top: 88%;
+  left: 61%;
+  background-color: #a72484;
+}
+.blob_2::before {
+  content: "P";
+  transform: rotate(78deg);
 }
 .blob_3 {
-  top: 68%;
-  left: 6%;
-  fill: #7d460d;
+  transform: rotate(47deg);
+  top: 72%;
+  left: 3%;
+  background-color: #7d460d;
 }
-.text-3 {
-  top: 68%;
-  left: 4.5%;
+.blob_3::before {
+  content: "Br";
+  transform: rotate(-47deg);
 }
 .blob_4 {
-  transform: rotate(48deg);
-  /* top: 56%;
-  left: 13%; */
-  top: 57.3%;
-  left: 13%;
+  top: 58%;
+  left: 11%;
+  transform: rotate(47deg);
   background-color: #7d460d;
 }
 .blob_4::before {
   content: "Br";
-  display: flex;
-  transform: rotate(-48deg);
-
-  font-size: 5vw;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: #f2f1ef;
+  transform: rotate(-47deg);
+}
+.blob_4::after {
+  content: "-";
+  top: 51%;
+  left: 15%;
+  transform: rotate(-227deg);
 }
 .blob_5 {
   top: 44%;
-  left: 20%;
-  fill: #7d460d;
+  left: 19%;
+  transform: rotate(47deg);
+  background-color: #7d460d;
 }
-.text-5 {
-  top: 44%;
-  left: 18.5%;
+.blob_5::before {
+  content: "Br";
+  transform: rotate(-47deg);
 }
+
 .blob_6 {
-  transform: rotate(162deg);
-  /* top: 3%;
-  left: 62.5%; */
-  top: 3%;
-  left: 64.8%;
+  top: 2%;
+  left: 61%;
+  transform: rotate(170deg);
   background-color: #66c243;
 }
 
 .blob_6::before {
   content: "G";
-  display: flex;
-  transform: rotate(-162deg);
-
-  font-size: 5vw;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: #f2f1ef;
+  transform: rotate(-170deg);
 }
+
 .blob_7 {
-  /* transform: rotate(120deg); */
-  transform: rotate(162deg);
-  /* top: 15%;
-  left: 69.5%; */
-  top: 15%;
-  left: 71.8%;
+  top: 16%;
+  left: 70%;
+  transform: rotate(170deg);
   background-color: #7d460d;
 }
 .blob_7::before {
   content: "Br";
-  display: flex;
-  transform: rotate(-162deg);
-
-  font-size: 5vw;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: #f2f1ef;
+  transform: rotate(-170deg);
 }
 .blob_8 {
-  transform: rotate(162deg);
-  top: 27%;
-  left: 78.8%;
-  /* top: 27%;
-  left: 76.5%; */
+  top: 30%;
+  left: 77.5%;
+  transform: rotate(170deg);
   background-color: #66c243;
 }
 .blob_8::before {
   content: "G";
-  display: flex;
-  transform: rotate(-162deg);
-
-  font-size: 5vw;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: #f2f1ef;
+  transform: rotate(-170deg);
 }
+
 /* ===========playfield end========== */
 
 /* =============additional start========== */

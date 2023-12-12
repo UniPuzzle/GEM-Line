@@ -80,21 +80,42 @@
       </div>
     </main>
     <div class="additional footer">
-      <div class="clues">
-        <h3 class="clues-title">Positive <br>Negative <br> Clues</h3>
-        <div class="clues-text-wrapper">
-          <div><span class="clues-blob clues-blob_1"></span>
-            <p class="clues-text clues-positive">
-              Lorem ipsum dol or sit amet
-            </p>
-          </div>
-          <div><span class="clues-blob clues-blob_2"></span>
-            <p class="clues-text clues-positive">
-              Lorem ipsum dol or sit amet
-            </p>
+      <input id="clues-yes" type="radio" name="clues"> <label for="clues-yes">
+        <div class="clues">
+          <h3 class="clues-title">Positive <br>Negative <br> Clues</h3>
+          <div class="clues-text-wrapper">
+            <div><span class="clues-blob clues-blob_1"></span>
+              <p class="clues-text clues-positive">
+                Lorem ipsum dol or sit amet
+              </p>
+            </div>
+            <div><span class="clues-blob clues-blob_2"></span>
+              <p class="clues-text clues-positive">
+                Lorem ipsum dol or sit amet
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </label>
+      <input id="clues-no" type="radio" name="clues">
+      <label class="clues-backdrop" for="clues-no">
+        <div class="clues-modal">
+          <h3 class="clues-title">Positive <br>Negative <br> Clues</h3>
+          <div class="clues-text-wrapper">
+            <div><span class="clues-blob clues-blob_1"></span>
+              <p class="clues-text clues-positive">
+                Lorem ipsum dol or sit amet Lorem ipsum dol or sit amet
+              </p>
+            </div>
+            <div><span class="clues-blob clues-blob_2"></span>
+              <p class="clues-text clues-positive">
+                Lorem ipsum dol or sit amet Lorem ipsum dol or sit amet Lorem ipsum dol or sit amet
+              </p>
+            </div>
+          </div>
+        </div>
+      </label>
+
       <input id="yes" type="radio" name="colors"> <label for="yes">
         <div class="colors">
           <h3 class="colors-title">color <br>scheme</h3>
@@ -128,40 +149,39 @@
         </div>
       </label>
       <input id="no" type="radio" name="colors">
-      <label class="backdrop" for="no">
-        <div>
-          <div class="colors-modal">
-            <h3 class="colors-title">color <br>scheme</h3>
-            <div class="colors-content-wrapper">
-              <div class="colors-content">
-                <div class="colors-content-list">
-                  <div class="br">Br</div><span>=</span>
-                  <div class="b">B</div><span>+</span>
-                  <div class="y">Y</div><span>+</span>
-                  <div class="r">R</div>
-                </div>
-                <div class="colors-content-list">
-                  <div class="o">O</div><span>=</span>
-                  <div class="r">R</div><span>+</span>
-                  <div class="y">Y</div>
-                </div>
+      <label class="colors-backdrop" for="no">
+        <div class="colors-modal">
+          <h3 class="colors-title">color <br>scheme</h3>
+          <div class="colors-content-wrapper">
+            <div class="colors-content">
+              <div class="colors-content-list">
+                <div class="br">Br</div><span>=</span>
+                <div class="b">B</div><span>+</span>
+                <div class="y">Y</div><span>+</span>
+                <div class="r">R</div>
               </div>
-              <div class="colors-content">
-                <div class="colors-content-list end">
-                  <div class="g">G</div><span>=</span>
-                  <div class="b">B</div><span>+</span>
-                  <div class="y">Y</div>
-                </div>
-                <div class="colors-content-list end">
-                  <div class="p">P</div><span>=</span>
-                  <div class="r">R</div><span>+</span>
-                  <div class="b">B</div>
-                </div>
+              <div class="colors-content-list">
+                <div class="o">O</div><span>=</span>
+                <div class="r">R</div><span>+</span>
+                <div class="y">Y</div>
+              </div>
+            </div>
+            <div class="colors-content">
+              <div class="colors-content-list end">
+                <div class="g">G</div><span>=</span>
+                <div class="b">B</div><span>+</span>
+                <div class="y">Y</div>
+              </div>
+              <div class="colors-content-list end">
+                <div class="p">P</div><span>=</span>
+                <div class="r">R</div><span>+</span>
+                <div class="b">B</div>
               </div>
             </div>
           </div>
         </div>
       </label>
+
 
 
 

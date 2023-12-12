@@ -41,6 +41,7 @@
       </div>
 
       <div class="playfield">
+
         <!-- <div class="line1"></div>
         <div class="line2"></div> -->
         <div class="elem klc_1"></div>
@@ -59,7 +60,14 @@
         <div class="elem klc_14"></div>
         <div class="elem klc_15"></div>
 
-
+        <div class="color-circle">
+          <div class="yellow circle"></div>
+          <div class="blue circle"></div>
+          <div class="red circle"></div>
+          <div class="yellow-dubl circle"></div>
+          <div class="blue-dubl circle"></div>
+          <div class="red-dubl circle"></div>
+        </div>
         <div class="blob blob_1 cls"></div>
         <div class="blob blob_2 cls"></div>
         <div class="blob blob_3 cls"></div>
@@ -73,43 +81,92 @@
     </main>
     <div class="additional footer">
       <div class="clues">
-        <h3 class="clues-title">Positive / <br>Negative <br> Clues</h3>
+        <h3 class="clues-title">Positive <br>Negative <br> Clues</h3>
         <div class="clues-text-wrapper">
-          <p class="clues-text clues-positive"><span></span>Lorem ipsum dolor sit amet</p>
-          <p class="clues-text clues-negative"><span></span>Lorem ipsum dolor sit amet</p>
-        </div>
-      </div>
-      <div class="colors">
-        <h3 class="colors-title">color <br>scheme</h3>
-        <div class="colors-content-wrapper">
-          <div class="colors-content">
-            <div class="colors-content-list">
-              <div class="br">Br</div><span>=</span>
-              <div class="b">B</div><span>+</span>
-              <div class="y">Y</div><span>+</span>
-              <div class="r">R</div>
-            </div>
-            <div class="colors-content-list">
-              <div class="o">O</div><span>=</span>
-              <div class="r">R</div><span>+</span>
-              <div class="y">Y</div>
-            </div>
+          <div><span class="clues-blob clues-blob_1"></span>
+            <p class="clues-text clues-positive">
+              Lorem ipsum dol or sit amet
+            </p>
           </div>
-          <div class="colors-content">
-            <div class="colors-content-list end">
-              <div class="g">G</div><span>=</span>
-              <div class="b">B</div><span>+</span>
-              <div class="y">Y</div>
-            </div>
-            <div class="colors-content-list end">
-              <div class="p">P</div><span>=</span>
-              <div class="r">R</div><span>+</span>
-              <div class="b">B</div>
-            </div>
+          <div><span class="clues-blob clues-blob_2"></span>
+            <p class="clues-text clues-positive">
+              Lorem ipsum dol or sit amet
+            </p>
           </div>
         </div>
       </div>
+      <input id="yes" type="radio" name="question"> <label for="yes">
+        <div class="colors">
+          <h3 class="colors-title">color <br>scheme</h3>
+          <div class="colors-content-wrapper">
+            <div class="colors-content">
+              <div class="colors-content-list">
+                <div class="br">Br</div><span>=</span>
+                <div class="b">B</div><span>+</span>
+                <div class="y">Y</div><span>+</span>
+                <div class="r">R</div>
+              </div>
+              <div class="colors-content-list">
+                <div class="o">O</div><span>=</span>
+                <div class="r">R</div><span>+</span>
+                <div class="y">Y</div>
+              </div>
+            </div>
+            <div class="colors-content">
+              <div class="colors-content-list end">
+                <div class="g">G</div><span>=</span>
+                <div class="b">B</div><span>+</span>
+                <div class="y">Y</div>
+              </div>
+              <div class="colors-content-list end">
+                <div class="p">P</div><span>=</span>
+                <div class="r">R</div><span>+</span>
+                <div class="b">B</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </label>
+      <input id="no" type="radio" name="question">
+      <label class="backdrop" for="no">
+        <div>
+          <div class="colors-modal">
+            <h3 class="colors-title">color <br>scheme</h3>
+            <div class="colors-content-wrapper">
+              <div class="colors-content">
+                <div class="colors-content-list">
+                  <div class="br">Br</div><span>=</span>
+                  <div class="b">B</div><span>+</span>
+                  <div class="y">Y</div><span>+</span>
+                  <div class="r">R</div>
+                </div>
+                <div class="colors-content-list">
+                  <div class="o">O</div><span>=</span>
+                  <div class="r">R</div><span>+</span>
+                  <div class="y">Y</div>
+                </div>
+              </div>
+              <div class="colors-content">
+                <div class="colors-content-list end">
+                  <div class="g">G</div><span>=</span>
+                  <div class="b">B</div><span>+</span>
+                  <div class="y">Y</div>
+                </div>
+                <div class="colors-content-list end">
+                  <div class="p">P</div><span>=</span>
+                  <div class="r">R</div><span>+</span>
+                  <div class="b">B</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </label>
+
+
+
     </div>
+
 
   </div>
 </body>

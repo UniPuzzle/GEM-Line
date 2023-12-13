@@ -85,7 +85,7 @@ ul {
   width: 100vw;
   background-color: #ababab;
   margin-left: auto;
-  /* border-top-left-radius: 2vw; */
+  border-top-left-radius: 2vw;
   border-bottom-left-radius: 2vw;
 }
 .goal-title {
@@ -109,7 +109,7 @@ ul {
   width: 96%;
   background-color: #ffffff;
   margin-left: auto;
-  margin: 2px 0;
+  margin: 0.5vw 0;
   border-top-left-radius: 2vw;
   border-bottom-left-radius: 2vw;
   color: #000000;
@@ -189,7 +189,6 @@ ul {
   height: 30%;
   margin: 2%;
   position: relative;
-  /* background-color: #abe3fb; */
 }
 .circle {
   width: 60%;
@@ -436,15 +435,17 @@ ul {
 /* =============additional start========== */
 .additional {
   width: 100vw;
-  height: auto;
+  height: 20vw;
   display: flex;
   justify-content: space-between;
 }
+
 .clues {
-  width: auto;
+  width: 100%;
+  height: 100%;
   background-color: #ababab;
-  border-top-left-radius: 1vw;
-  border-bottom-left-radius: 1vw;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
   display: flex;
   text-align: center;
   align-items: center;
@@ -460,35 +461,35 @@ ul {
   color: #ffffff;
   line-height: 1;
   letter-spacing: 0.5px;
-  padding: 3px 7px 3px 3px;
+  padding: 3px 10px 3px 3px;
   font-weight: 100;
 }
 .clues-text-wrapper {
-  width: auto;
-  height: 100%;
-  margin: 1px 0;
-  padding: 3% 2% 3% 0;
+  width: 100%;
+  height: 96%;
   background-color: #ffffff;
-  border-top-left-radius: 1vw;
-  border-bottom-left-radius: 1vw;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
   display: flex;
   flex-wrap: wrap;
 }
 .clues-text-wrapper div {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 .clues-text {
   display: flex;
   font-size: 3vw;
   color: #000000;
-  padding: 0 4px 0px 2px;
+  padding: 0 6px 0px 2px;
   text-align: left;
   align-items: center;
 }
 .clues-blob {
   position: relative;
-  width: 7vw;
+  width: 100%;
+  max-width: 5vw;
   aspect-ratio: 1/1;
   margin-left: 5px;
   margin-right: 5px;
@@ -529,12 +530,15 @@ ul {
   font-size: 3.5vw;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-weight: 700;
   color: #fff;
   position: absolute;
-  top: 24%;
-  left: 0%;
+  width: 100%;
+  height: 100%;
+  margin-left: -0.4vw;
+  top: 0;
+  left: 0;
 }
 
 /* ============ */
@@ -542,13 +546,14 @@ ul {
   width: auto;
   height: 100%;
   background-color: #ababab;
-  border-top-left-radius: 1vw;
-  border-bottom-left-radius: 1vw;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
   display: flex;
   text-align: center;
   align-items: center;
-  margin-left: -1%;
+  margin-left: -2%;
 }
+
 .colors-title {
   font-size: 3vw;
   display: flex;
@@ -567,8 +572,8 @@ ul {
   width: 100%;
   height: 96%;
   background-color: #ffffff;
-  border-top-left-radius: 1vw;
-  border-bottom-left-radius: 1vw;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
   display: flex;
   align-items: center;
 }
@@ -630,90 +635,6 @@ ul {
   background-color: #a72484;
 }
 /* =============additional end========== */
-/* =============colors-modal start========== */
-.colors-modal {
-  position: absolute;
-  top: 50%;
-  left: 152%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 50vw;
-  background-color: #ababab;
-  border-top-left-radius: 1vw;
-  border-bottom-left-radius: 1vw;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  transition: all 550ms;
-}
-.colors-modal .colors-title {
-  font-size: 4vw;
-  padding: 0 2vw 0 3px;
-}
-.colors-modal .colors-content-wrapper {
-  width: 100%;
-  height: 96%;
-}
-.colors-modal .colors-content {
-  width: auto;
-  padding: 2.3vw;
-  gap: 30px;
-}
-.colors-modal .colors-content-list {
-  font-size: 5vw;
-  justify-content: flex-start;
-}
-
-.colors-modal .colors-content-list div {
-  padding-top: 2px;
-  height: 9vw;
-}
-
-/* =============colors-modal end========== */
-/* =============clues-modal start========== */
-.clues-modal {
-  position: absolute;
-  top: 50%;
-  left: 152%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 50vw;
-  background-color: #ababab;
-  border-top-left-radius: 1vw;
-  border-bottom-left-radius: 1vw;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  transition: all 550ms;
-}
-.clues-modal .clues-title {
-  font-size: 4vw;
-}
-.clues-modal .clues-text-wrapper div {
-  width: 100%;
-}
-.clues-modal .clues-text-wrapper {
-  width: 86%;
-}
-
-.clues-modal .clues-text {
-  font-size: 4vw;
-  padding: 0 5% 0px 2px;
-}
-.clues-modal .clues-blob {
-  margin-left: 10px;
-  margin-right: 10px;
-  min-width: 9vw;
-}
-.clues-modal .clues-blob::before {
-  font-size: 6vw;
-}
-
-.clues-modal .clues-blob_2::after {
-  font-size: 7.5vw;
-}
-
-/* =============clues-modal end========== */
 
 /* ==============backdropS start=========== */
 
@@ -741,7 +662,75 @@ ul {
   transition: all 500ms;
 }
 /* ==============backdrop end=========== */
+/* #clues-yes:checked ~ .clues-backdrop {
+  opacity: 1;
+  pointer-events: painted;
+}
+#clues-yes:checked ~ .clues-backdrop .clues-modal {
+  left: 52%;
+} */
+#clues-yes:checked ~ .clues {
+  transition: transform 550ms;
+  transform: scale(1.5);
+  width: 61%;
+  top: 72%;
+  left: 24%;
+  position: absolute;
+  height: 12%;
+  z-index: 111;
+  animation: clues 0.5s;
+}
+@keyframes clues {
+  from {
+    top: 88.5%;
+    left: 0%;
+  }
+  to {
+    top: 72%;
+    left: 24%;
+  }
+}
+#clues-yes:checked ~ .colors {
+  width: 70%;
+  margin-left: auto;
+}
+
 #clues-yes:checked ~ .clues-backdrop {
+  opacity: 1;
+  pointer-events: painted;
+}
+
+#yes:checked ~ .colors {
+  transition: transform 550ms;
+  transform: scale(1.5);
+  width: 61%;
+  top: 72%;
+  left: 24%;
+  position: absolute;
+  height: 12%;
+  z-index: 111;
+  animation: colors 0.5s;
+}
+@keyframes colors {
+  from {
+    top: 88.5%;
+    left: 40%;
+  }
+  to {
+    top: 72%;
+    left: 24%;
+  }
+}
+
+#yes:checked ~ .colors-backdrop {
+  opacity: 1;
+  pointer-events: painted;
+}
+
+input[type="radio"] {
+  display: none;
+}
+/* #clues-yes:checked ~ .clues-backdrop {
   opacity: 1;
   pointer-events: painted;
 }
@@ -758,4 +747,4 @@ ul {
 
 input[type="radio"] {
   display: none;
-}
+} */

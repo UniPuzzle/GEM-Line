@@ -102,45 +102,26 @@ input[type="radio"] {
   height: auto;
   border-top-left-radius: 2vw;
   border-bottom-left-radius: 2vw;
-  transition: all 550ms;
-  animation: goal-2 0.5s;
-}
-#goal-yes:checked ~ .goal {
-  transition: transform 550ms;
-  transform: scale(1.2);
-  top: 10%;
-  left: 32%;
-  position: absolute;
+  transition: all 1050ms;
   z-index: 111;
-  animation: goal 0.5s;
+}
+#goal-yes:checked ~ .goal .description-text,
+#goal-yes:checked ~ .goal .goal-description {
+  transition: 550ms;
+  font-size: 5vw;
+
+  position: relative;
+  transition-delay: 250ms;
 }
 @keyframes goal {
   from {
-    top: 8%;
-    width: 100vw;
-    height: auto;
-    left: 0%;
+    font-size: 3.3vw;
   }
   to {
-    width: 62vw;
-    height: auto;
+    font-size: 5vw;
+  }
+}
 
-    top: 10%;
-    left: 32%;
-  }
-}
-@keyframes goal-2 {
-  from {
-    width: 85vw;
-  }
-  to {
-    width: 100vw;
-  }
-}
-#goal-yes:checked ~ .goal {
-  width: 62%;
-  margin-left: auto;
-}
 .goal-title {
   font-size: 10px;
   display: flex;
@@ -482,7 +463,7 @@ input[type="radio"] {
   animation: clues-2 0.5s;
 }
 
-@keyframes clues-2 {
+/* @keyframes clues-2 {
   from {
     top: 66%;
     transform: scale(1.5);
@@ -492,7 +473,7 @@ input[type="radio"] {
     width: 100%;
     height: 100%;
   }
-}
+} */
 
 .clues-title {
   font-size: 3vw;
@@ -596,19 +577,19 @@ input[type="radio"] {
   text-align: center;
   align-items: center;
   margin-left: -2%;
-  transition: all 250ms;
+  transition: all 850ms;
 
   animation: colors-2 0.5s;
 }
 
-@keyframes colors-2 {
+/* @keyframes colors-2 {
   from {
     transform: scale(1.5);
   }
   to {
     transform: scale(1);
   }
-}
+} */
 
 .colors-title {
   font-size: 3vw;
@@ -694,19 +675,53 @@ input[type="radio"] {
 
 /* ==============backdropS start=========== */
 
-.clues-backdrop,
-.colors-backdrop,
 .goal-backdrop {
   opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  width: 0%;
+  height: 0%;
   pointer-events: none;
   background-color: var(--backdrop-color);
-  transition: all 500ms;
+  transition: all 1000ms;
   z-index: 2;
+}
+.clues-backdrop,
+.colors-backdrop {
+  opacity: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  width: 0%;
+  height: 0%;
+  pointer-events: none;
+  background-color: var(--backdrop-color);
+  transition-delay: 1s;
+  transition: all 1000ms;
+  z-index: 112;
+}
+.clues-backdrop {
+  opacity: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  width: 0%;
+  height: 0%;
+  pointer-events: none;
+  background-color: var(--backdrop-color);
+  transition-delay: 1s;
+  transition: all 1000ms;
+  z-index: 112;
 }
 
 #goal-yes:checked ~ .goal-backdrop,
@@ -714,6 +729,11 @@ input[type="radio"] {
 #colors-yes:checked ~ .colors-backdrop {
   opacity: 1;
   pointer-events: painted;
+  width: 100%;
+  height: 100%;
+  transition-delay: 1s;
+
+  transition: all 500ms;
 }
 
 /* ==============backdrop end=========== */
@@ -747,26 +767,48 @@ input[type="radio"] {
 } */
 
 #clues-yes:checked ~ .clues {
-  transition: transform 550ms;
-  width: 49%;
-  top: 66%;
-  left: 38%;
-  position: absolute;
-  height: 15%;
-  z-index: 111;
-  animation: clues 0.5s;
-  transform: scale(1.5);
+  min-width: 97vw;
+  height: 30vw;
+  z-index: 113;
+  top: -50%;
+  /* transform: scaleX(1.5) scaleY(1.5); */
+  /* animation: colors; */
+  animation-name: clues;
+  position: relative;
+  /* right: -32%; */
+  /* animation-timing-function: linear; */
+  transition-delay: 1000ms;
+  transition-duration: 1550ms;
+  transition: all 2s;
+  /* transform-origin: right bottom; */
+  z-index: 115;
+}
+#clues-yes:checked ~ .clues .clues-title {
+  font-size: 4vw;
+}
+#clues-yes:checked ~ .clues .clues-text {
+  font-size: 5vw;
+}
+
+#clues-yes:checked ~ .clues .clues-blob {
+  max-width: 8vw;
+}
+#clues-yes:checked ~ .clues .clues-blob::before {
+  font-size: 3.5vw;
+}
+#clues-yes:checked ~ .clues .clues-blob_2::after {
+  font-size: 5.5vw;
 }
 @keyframes clues {
   from {
-    top: 88.5%;
-    left: 55%;
-    height: 12%;
+    height: 100%;
+    min-width: auto;
+    top: 0%;
   }
   to {
-    top: 66%;
-    height: 15%;
-    left: 38%;
+    height: 30vw;
+    min-width: 97vw;
+    top: -50%;
   }
 }
 #clues-yes:checked ~ .colors {
@@ -775,24 +817,24 @@ input[type="radio"] {
 }
 
 #colors-yes:checked ~ .colors {
-  transition: transform 550ms;
-  transform: scale(1.5);
-  width: 61%;
-  top: 72%;
-  left: 24%;
-  position: absolute;
-  height: 12%;
   margin-left: 0;
-  z-index: 111;
-  animation: colors 0.5s;
+  z-index: 113;
+  transform: scaleX(1.61) scaleY(1.61);
+  /* animation: colors; */
+  /* animation-name: colors; */
+
+  /* animation-timing-function: linear; */
+  transition-delay: 400ms;
+  transition-duration: 550ms;
+  transform-origin: right bottom;
+  z-index: 115;
 }
-@keyframes colors {
-  from {
-    top: 88.5%;
-    left: 40%;
+/* @keyframes colors {
+  0% {
+    transform: scaleX(1) scaleY(1);
   }
-  to {
-    top: 72%;
-    left: 24%;
+
+  100% {
+    transform: scaleX(1.5) scaleY(1.5);
   }
-}
+} */

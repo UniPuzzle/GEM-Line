@@ -65,7 +65,7 @@ input[type="radio"] {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .main {
   -webkit-box-flex: 1;
@@ -449,7 +449,7 @@ input[type="radio"] {
 }
 
 .clues {
-  width: 100%;
+  width: auto;
   height: 100%;
   background-color: var(--main-bg-item);
   border-top-left-radius: 2vw;
@@ -458,22 +458,91 @@ input[type="radio"] {
   text-align: center;
   align-items: center;
   margin-left: 3vw;
-  transition: all 500ms;
-
-  animation: clues-2 0.5s;
+  transition: all 850ms;
+  position: relative;
+  animation: clues-9 0.85s;
 }
 
-/* @keyframes clues-2 {
-  from {
-    top: 66%;
-    transform: scale(1.5);
-    left: 38%;
+@keyframes clues-9 {
+  0% {
+    width: 99vw;
   }
-  to {
+
+  100% {
     width: 100%;
+  }
+}
+
+#clues-yes:checked ~ .clues {
+  margin-left: 3vw;
+  /* transform: scaleX(1.61) scaleY(1.61); */
+  /* transition-delay: 400ms;
+  transition-duration: 550ms; */
+  transform-origin: right bottom;
+  z-index: 115;
+  width: 99vw;
+  /* max-width: 61vw; */
+  height: 27vw;
+  /* height: 100%; */
+  background-color: var(--main-bg-item);
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  /* position: relative; */
+  /* transition: all 650ms; */
+  transition-delay: 550ms;
+  animation: clues-7 1850ms, clues-8 0.85s;
+}
+#clues-yes:checked ~ .colors {
+  width: 0;
+  animation: clues-5 1850ms;
+  z-index: 9999999;
+}
+
+@keyframes clues-7 {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 99vw;
+  }
+}
+@keyframes clues-8 {
+  0% {
     height: 100%;
   }
-} */
+  50% {
+    height: 100%;
+  }
+
+  100% {
+    height: 27vw;
+  }
+}
+@keyframes clues-5 {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+.colors {
+  width: 100%;
+  animation: clues-6 1850ms;
+  position: relative;
+}
+
+@keyframes clues-6 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
 
 .clues-title {
   font-size: 3vw;
@@ -579,7 +648,7 @@ input[type="radio"] {
   margin-left: -2%;
   transition: all 850ms;
 
-  animation: colors-2 0.5s;
+  /* animation: colors-2 0.5s; */
 }
 
 /* @keyframes colors-2 {
@@ -606,7 +675,7 @@ input[type="radio"] {
   font-weight: 100;
 }
 .colors-content-wrapper {
-  width: 100%;
+  width: auto;
   height: 96%;
   background-color: var(--second-bg-item);
   border-top-left-radius: 2vw;
@@ -686,7 +755,7 @@ input[type="radio"] {
   width: 0%;
   height: 0%;
   pointer-events: none;
-  background-color: var(--backdrop-color);
+  background-color: transparent;
   transition: all 1000ms;
   z-index: 2;
 }
@@ -702,23 +771,7 @@ input[type="radio"] {
   width: 0%;
   height: 0%;
   pointer-events: none;
-  background-color: var(--backdrop-color);
-  transition-delay: 1s;
-  transition: all 1000ms;
-  z-index: 112;
-}
-.clues-backdrop {
-  opacity: 0;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  width: 0%;
-  height: 0%;
-  pointer-events: none;
-  background-color: var(--backdrop-color);
+  background-color: transparent;
   transition-delay: 1s;
   transition: all 1000ms;
   z-index: 112;
@@ -766,24 +819,7 @@ input[type="radio"] {
   margin-left: auto;
 } */
 
-#clues-yes:checked ~ .clues {
-  min-width: 97vw;
-  height: 30vw;
-  z-index: 113;
-  top: -50%;
-  /* transform: scaleX(1.5) scaleY(1.5); */
-  /* animation: colors; */
-  animation-name: clues;
-  position: relative;
-  /* right: -32%; */
-  /* animation-timing-function: linear; */
-  transition-delay: 1000ms;
-  transition-duration: 1550ms;
-  transition: all 2s;
-  /* transform-origin: right bottom; */
-  z-index: 115;
-}
-#clues-yes:checked ~ .clues .clues-title {
+/* #clues-yes:checked ~ .clues .clues-title {
   font-size: 4vw;
 }
 #clues-yes:checked ~ .clues .clues-text {
@@ -814,7 +850,7 @@ input[type="radio"] {
 #clues-yes:checked ~ .colors {
   width: 70%;
   margin-left: auto;
-}
+} */
 
 #colors-yes:checked ~ .colors {
   margin-left: 0;

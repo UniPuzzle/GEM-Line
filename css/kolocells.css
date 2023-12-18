@@ -585,8 +585,11 @@ input[type="radio"] {
   text-align: center;
   align-items: center;
   margin-left: -2%;
-  transition: all 950ms;
+  transition: all 2950ms;
   position: relative;
+  /* animation: colors 1850ms; */
+}
+#clues-no:checked ~ .colors {
   animation: colors 1850ms;
 }
 @keyframes colors {

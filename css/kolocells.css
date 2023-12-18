@@ -463,7 +463,7 @@ input[type="radio"] {
 #clues-yes:checked ~ .colors {
   width: 0;
   margin-left: -100%;
-  animation: colors-2 1950ms;
+  animation: colors-2 950ms;
 }
 
 @keyframes colors-2 {
@@ -585,7 +585,7 @@ input[type="radio"] {
   text-align: center;
   align-items: center;
   margin-left: -2%;
-  transition: all 2950ms;
+  transition: all 850ms;
   position: relative;
   /* animation: colors 1850ms; */
 }
@@ -595,10 +595,12 @@ input[type="radio"] {
 @keyframes colors {
   0% {
     width: 0%;
+    opacity: 0;
   }
 
   100% {
     width: 100%;
+    opacity: 1;
   }
 }
 

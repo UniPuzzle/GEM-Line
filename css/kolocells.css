@@ -461,7 +461,7 @@ input[type="radio"] {
 }
 
 #clues-yes:checked ~ .colors {
-  width: 39%;
+  width: 12%;
   transform: scaleX(1.61) scaleY(1.61);
   transition-duration: 1030ms;
   transform-origin: bottom left;

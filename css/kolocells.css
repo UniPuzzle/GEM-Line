@@ -455,15 +455,16 @@ input[type="radio"] {
 
 #clues-yes:checked ~ .clues {
   width: 61%;
-  transform: scaleX(1.61) scaleY(1.61);
+  transform: scaleX(1.43) scaleY(1.43);
   transition-duration: 1250ms;
   transform-origin: bottom left;
 }
 
 #clues-yes:checked ~ .colors {
   width: 12%;
-  transform: scaleX(1.61) scaleY(1.61);
-  transition-duration: 1030ms;
+  max-width: 60vw;
+  transform: scaleX(1.43) scaleY(1.43);
+  transition-duration: 1000ms;
   transform-origin: bottom left;
 }
 
@@ -612,7 +613,7 @@ input[type="radio"] {
 
 #colors-yes:checked ~ .colors {
   margin-left: 0;
-  transform: scaleX(1.62) scaleY(1.62);
+  transform: scaleX(1.43) scaleY(1.43);
   transition-delay: 150ms;
   transition-duration: 850ms;
   transform-origin: right bottom;

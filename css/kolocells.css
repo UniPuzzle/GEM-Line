@@ -461,6 +461,13 @@ input[type="radio"] {
 }
 
 #clues-yes:checked ~ .colors {
+  width: 39%;
+  transform: scaleX(1.61) scaleY(1.61);
+  transition-duration: 1030ms;
+  transform-origin: bottom left;
+}
+
+/* #clues-yes:checked ~ .colors {
   width: 0;
   margin-left: -100%;
   animation: colors-2 950ms;
@@ -481,7 +488,7 @@ input[type="radio"] {
     opacity: 0;
     margin-left: -100%;
   }
-}
+} */
 
 .clues-title {
   font-size: 3vw;
@@ -585,11 +592,10 @@ input[type="radio"] {
   text-align: center;
   align-items: center;
   margin-left: -2%;
-  transition: all 850ms;
+  transition: all 1050ms;
   position: relative;
-  /* animation: colors 1850ms; */
 }
-#clues-no:checked ~ .colors {
+/* #clues-no:checked ~ .colors {
   animation: colors 1850ms;
 }
 @keyframes colors {
@@ -602,7 +608,7 @@ input[type="radio"] {
     width: 100%;
     opacity: 1;
   }
-}
+} */
 
 #colors-yes:checked ~ .colors {
   margin-left: 0;
@@ -719,7 +725,7 @@ input[type="radio"] {
 
   z-index: 400;
 }
-#goal-yes:checked ~ .clues,
+/* #goal-yes:checked ~ .clues,
 #goal-yes:checked ~ .color {
   z-index: 300;
 }
@@ -739,6 +745,6 @@ input[type="radio"] {
 }
 #colors-yes:checked ~ .colors {
   z-index: 500;
-}
+} */
 
 /* ==============backdrop end=========== */

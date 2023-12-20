@@ -512,11 +512,11 @@ input[type="radio"] {
 }
 #clues-yes:checked ~ .clues .clues-text {
   /* padding: 0 12vw 0px 7px; */
-  font-size: 2.6vw;
+  /* font-size: 2.6vw; */
   /* transition: all 1550ms ease;
   transition-delay: 500ms; */
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-  animation: clues-text 1280ms forwards;
+  /* animation: clues-text 1280ms forwards; */
 }
 @keyframes clues-text {
   0% {

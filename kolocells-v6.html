@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KOLOCELLS-v3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css" />
+
+  <link rel="stylesheet" href="./css/kolocells-v6.css" />
+
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header"></header>
+    <main class="main">
+      <input id="goal-yes" type="radio" name="goal">
+      <label class="goal" for="goal-yes">
+        <div class="goal-title">
+          <h2>Rules</h2>
+          <h2>Goal</h2>
+        </div>
+        <div class="goal-description">
+          <h3 class="description-title">Restore the basic colors of all the circles in the array. </h3>
+
+          <ul class="description-list">
+            <li class="description-text">1. Every circle is colored in one of the 3 basic colors - (B)lue, (R)ed of
+              (Y)ellow.
+            </li>
+            <li class="description-text">There is an EQUAL number of the B, R and Y circles.
+            </li>
+            <li class="description-text">3. Each clue is an arrow pointing to the respective row and showing ALL colors
+              in that row ARE mixing to the indicted
+              color; or NOT mixing - if the arrow is with the “minus” sign.</li>
+            <li class="description-text">4. Several circles of the same color count as one color. R+R+Y = O is equal
+              R+Y+Y=O.</li>
+            <li class="description-text">5. The color scheme is shown in the lower right corner.</li>
+          </ul>
+        </div>
+      </label>
+      <input id="goal-no" type="radio" name="goal">
+      <label class="goal-backdrop" for="goal-no">
+      </label>
+
+      <div class="playfield">
+
+        <div class="elem klc_1"></div>
+        <div class="elem klc_2"></div>
+        <div class="elem klc_3"></div>
+        <div class="elem klc_4"></div>
+        <div class="elem klc_5"></div>
+        <div class="elem klc_6"></div>
+        <div class="elem klc_7"></div>
+        <div class="elem klc_8"></div>
+        <div class="elem klc_9"></div>
+        <div class="elem klc_10"></div>
+        <div class="elem klc_11"></div>
+        <div class="elem klc_12"></div>
+        <div class="elem klc_13"></div>
+        <div class="elem klc_14"></div>
+        <div class="elem klc_15"></div>
+
+        <div class="color-circle">
+          <div class="yellow circle"></div>
+          <div class="blue circle"></div>
+          <div class="red circle"></div>
+          <div class="yellow-dubl circle"></div>
+          <div class="blue-dubl circle"></div>
+          <div class="red-dubl circle"></div>
+        </div>
+
+        <div class="blob blob_1 cls"></div>
+        <div class="blob blob_2 cls"></div>
+        <div class="blob blob_3 cls"></div>
+        <div class="blob blob_4 cls"></div>
+        <div class="blob blob_5 cls"></div>
+        <div class="blob blob_6 cls"></div>
+        <div class="blob blob_7 cls"></div>
+        <div class="blob blob_8 cls"></div>
+
+      </div>
+    </main>
+    <div class="additional footer">
+      <input id="clues-yes" type="radio" name="clues">
+      <label class="clues" for="clues-yes">
+        <h3 class="clues-title">Positive<br>Negative</h3>
+        <div class="clues-text-wrapper">
+          <div><span class="clues-blob clues-blob_1"></span>
+            <p class="clues-text clues-positive">
+              ALL colors in the row ARE mixing to “X”
+            </p>
+          </div>
+          <div><span class="clues-blob clues-blob_2"></span>
+            <p class="clues-text clues-positive">
+              ALL colors in the row ARE NOT mixing to “X”
+            </p>
+          </div>
+        </div>
+      </label>
+      <input id="clues-no" type="radio" name="clues">
+      <label class="clues-backdrop" for="clues-no">
+      </label>
+
+      <input id="colors-yes" type="radio" name="colors">
+      <label class="colors" for="colors-yes">
+        <h3 class="colors-title">color <br>scheme</h3>
+        <div class="colors-content-wrapper">
+          <div class="colors-content">
+            <div class="colors-content-list">
+              <div class="br">Br</div><span>=</span>
+              <div class="b">B</div><span>+</span>
+              <div class="y">Y</div><span>+</span>
+              <div class="r">R</div>
+            </div>
+            <div class="colors-content-list">
+              <div class="o">O</div><span>=</span>
+              <div class="r">R</div><span>+</span>
+              <div class="y">Y</div>
+            </div>
+          </div>
+          <div class="colors-content">
+            <div class="colors-content-list end">
+              <div class="g">G</div><span>=</span>
+              <div class="b">B</div><span>+</span>
+              <div class="y">Y</div>
+            </div>
+            <div class="colors-content-list end">
+              <div class="p">P</div><span>=</span>
+              <div class="r">R</div><span>+</span>
+              <div class="b">B</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="colors-backdrop"></div>
+      </label>
+
+      <input id="colors-no" type="radio" name="colors">
+      <label class="colors-backdrop" for="colors-no"></label>
+    </div>
+
+  </div>
+</body>
+
+</html>

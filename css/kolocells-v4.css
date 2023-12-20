@@ -515,11 +515,14 @@ input[type="radio"] {
   padding: 0 2.5vw 0 1vw;
   text-align: left;
   align-items: center;
+
+  transition: all 1250ms ease;
 }
 #clues-yes:checked ~ .clues .clues-text {
   padding: 0 12vw 0px 7px;
   font-size: 2.6vw;
-  transition: all 1250ms ease;
+  transition: font-size 1250ms ease;
+  transition-delay: 500ms;
 }
 .clues-blob {
   position: relative;

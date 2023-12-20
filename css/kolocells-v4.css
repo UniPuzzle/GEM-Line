@@ -523,6 +523,10 @@ input[type="radio"] {
     transform: scale(0.6);
     opacity: 0;
   }
+
+  15% {
+    display: none;
+  }
   25% {
     padding-right: 3vw;
     font-size: 2.3vw;
@@ -537,6 +541,7 @@ input[type="radio"] {
     /* padding-right: 9vw; */
     /* font-size: 2.5vw; */
     /* transform: scale(0.9); */
+    display: block;
     opacity: 0;
   }
   100% {
@@ -553,8 +558,21 @@ input[type="radio"] {
   padding: 0 2.5vw 0 1vw;
   text-align: left;
   align-items: center;
-
+  opacity: 1;
   transition: all 1250ms ease;
+  animation: clues-text-2 1250ms ease;
+}
+@keyframes clues-text-2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .clues-blob {

@@ -131,7 +131,7 @@ input[type="radio"] {
   font-weight: 100;
 }
 .goal-description {
-  font-size: 3.3vw;
+  font-size: 3vw;
   width: 96%;
   background-color: var(--second-bg-item);
   margin-left: auto;
@@ -145,7 +145,7 @@ input[type="radio"] {
 .description-title {
   padding-left: 10px;
   padding-right: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   margin-top: 7px;
   font-weight: 100;
 }
@@ -158,7 +158,7 @@ input[type="radio"] {
 }
 
 .description-text {
-  font-size: 3.3vw;
+  font-size: 3vw;
   transition: all 850ms;
 }
 
@@ -516,7 +516,7 @@ input[type="radio"] {
   /* transition: all 1550ms ease;
   transition-delay: 500ms; */
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-  animation: clues-text 1280ms forwards;
+  animation: clues-text 1260ms forwards;
 }
 @keyframes clues-text {
   0% {
@@ -560,7 +560,7 @@ input[type="radio"] {
   align-items: center;
   opacity: 1;
   transition: all 1250ms ease;
-  animation: clues-text-2 1250ms ease;
+  /* animation: clues-text-2 1250ms ease; */
 }
 @keyframes clues-text-2 {
   0% {

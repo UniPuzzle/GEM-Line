@@ -513,8 +513,35 @@ input[type="radio"] {
 #clues-yes:checked ~ .clues .clues-text {
   /* padding: 0 12vw 0px 7px; */
   font-size: 2.6vw;
-  transition: all 1550ms ease;
-  transition-delay: 500ms;
+  /* transition: all 1550ms ease;
+  transition-delay: 500ms; */
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: clues-text 1280ms forwards;
+}
+@keyframes clues-text {
+  0% {
+    transform: scale(0.6);
+  }
+  25% {
+    padding-right: 3vw;
+    font-size: 2.3vw;
+    transform: scale(0.7);
+  }
+  50% {
+    /* padding-right: 6vw; */
+    font-size: 2.4vw;
+    transform: scale(0.8);
+  }
+  75% {
+    /* padding-right: 9vw; */
+    font-size: 2.5vw;
+    transform: scale(0.9);
+  }
+  100% {
+    padding-right: 12vw;
+    font-size: 2.6vw;
+    transform: scale(1);
+  }
 }
 .clues-text {
   display: flex;

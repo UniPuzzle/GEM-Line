@@ -102,10 +102,12 @@ input[type="radio"] {
   height: auto;
   border-top-left-radius: 2vw;
   border-bottom-left-radius: 2vw;
+  transition: all 1250ms ease;
 }
+
 #goal-yes:checked ~ .goal .description-text,
 #goal-yes:checked ~ .goal .goal-description {
-  transition: 850ms;
+  transition: all 1250ms ease;
   font-size: 5vw;
 
   position: relative;
@@ -508,6 +510,12 @@ input[type="radio"] {
   align-items: center;
   width: 100%;
 }
+#clues-yes:checked ~ .clues .clues-text {
+  /* padding: 0 12vw 0px 7px; */
+  font-size: 2.6vw;
+  transition: all 1550ms ease;
+  transition-delay: 500ms;
+}
 .clues-text {
   display: flex;
   font-size: 2.3vw;
@@ -518,12 +526,7 @@ input[type="radio"] {
 
   transition: all 1250ms ease;
 }
-#clues-yes:checked ~ .clues .clues-text {
-  padding: 0 12vw 0px 7px;
-  font-size: 2.6vw;
-  transition: font-size 1250ms ease;
-  transition-delay: 500ms;
-}
+
 .clues-blob {
   position: relative;
   width: 100%;

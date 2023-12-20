@@ -516,7 +516,7 @@ input[type="radio"] {
   /* transition: all 1550ms ease;
   transition-delay: 500ms; */
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-  /* animation: clues-text 1280ms forwards; */
+  animation: clues-text 1280ms forwards;
 }
 @keyframes clues-text {
   0% {
@@ -525,17 +525,17 @@ input[type="radio"] {
   25% {
     padding-right: 3vw;
     font-size: 2.3vw;
-    transform: scale(0.7);
+    /* transform: scale(0.7); */
   }
   50% {
     /* padding-right: 6vw; */
-    font-size: 2.4vw;
-    transform: scale(0.8);
+    /* font-size: 2.4vw; */
+    /* transform: scale(0.8); */
   }
   75% {
     /* padding-right: 9vw; */
-    font-size: 2.5vw;
-    transform: scale(0.9);
+    /* font-size: 2.5vw; */
+    /* transform: scale(0.9); */
   }
   100% {
     padding-right: 12vw;

@@ -102,16 +102,16 @@ input[type="radio"] {
   height: auto;
   border-top-left-radius: 2vw;
   border-bottom-left-radius: 2vw;
-  /* transition: all 250ms ease; */
+  transition: all 1250ms ease;
 }
 
 #goal-yes:checked ~ .goal .description-text,
-#goal-yes:checked ~ .goal .description-title {
-  transition: all 250ms ease;
-  font-size: 3.5vw;
-  height: auto;
+#goal-yes:checked ~ .goal .goal-description {
+  transition: all 1250ms ease;
+  font-size: 5vw;
+
   position: relative;
-  /* transition-delay: 150ms; */
+  transition-delay: 150ms;
 }
 
 .goal-title {
@@ -131,8 +131,8 @@ input[type="radio"] {
   font-weight: 100;
 }
 .goal-description {
+  font-size: 2.3vw;
   width: 96%;
-
   background-color: var(--second-bg-item);
   margin-left: auto;
   margin: 0.5vw 0;
@@ -141,30 +141,13 @@ input[type="radio"] {
   color: var(--main-color);
   transition: all 1250ms;
 }
-#goal-yes:checked ~ .goal .goal-description {
-  animation: aspect-ratio 1250ms forwards;
-}
-@keyframes aspect-ratio {
-  0% {
-    aspect-ratio: 1/0;
-  }
-  50% {
-    aspect-ratio: 1/0.5;
-  }
-
-  100% {
-    aspect-ratio: 1/1;
-  }
-}
 
 .description-title {
-  font-size: 2.7vw;
   padding-left: 10px;
   padding-right: 8px;
   margin-bottom: 7px;
   margin-top: 7px;
   font-weight: 100;
-  transition: all 250ms;
 }
 
 .description-list {
@@ -176,7 +159,7 @@ input[type="radio"] {
 
 .description-text {
   font-size: 2.3vw;
-  transition: all 250ms;
+  transition: all 1250ms;
 }
 
 /* =======goal end======= */

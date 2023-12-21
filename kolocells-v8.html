@@ -22,6 +22,32 @@
 
     <header class="header"></header>
     <main class="main">
+      <div class="goal-substrate">
+
+        <div class="goal-title">
+          <h2>Rules</h2>
+          <h2>Goal</h2>
+        </div>
+        <div class="goal-description">
+          <h3 class="description-title">Restore the basic colors of all the circles in the array. </h3>
+
+          <ul class="description-list">
+            <li class="description-text">1. Every circle is colored in one of the 3 basic colors - (B)lue, (R)ed of
+              (Y)ellow.
+            </li>
+            <li class="description-text">There is an EQUAL number of the B, R and Y circles.
+            </li>
+            <li class="description-text">3. Each clue is an arrow pointing to the respective row and showing ALL
+              colors
+              in that row ARE mixing to the indicted
+              color; or NOT mixing - if the arrow is with the “minus” sign.</li>
+            <li class="description-text">4. Several circles of the same color count as one color. R+R+Y = O is equal
+              R+Y+Y=O.</li>
+            <li class="description-text">5. The color scheme is shown in the lower right corner.</li>
+          </ul>
+        </div>
+
+      </div>
       <input id="goal-yes" type="radio" name="goal">
       <label class="goal" for="goal-yes">
         <div class="goal-title">
@@ -91,7 +117,7 @@
     <div class="additional footer">
       <input id="clues-yes" type="radio" name="clues">
       <label class="clues" for="clues-yes">
-        <h3 class="clues-title">Positive<br>Negative</h3>
+        <h3 class="clues-title">Positive<br>Negative<br>Clues</h3>
         <div class="clues-text-wrapper">
           <div><span class="clues-blob clues-blob_1"></span>
             <p class="clues-text clues-positive">

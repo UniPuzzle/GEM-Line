@@ -94,7 +94,19 @@ input[type="radio"] {
 /* ======header end====== */
 
 /* =======goal start======= */
-.goal {
+.goal-substrate {
+  display: flex;
+  margin-left: 3vw;
+  width: 100vw;
+  background-color: red;
+  height: auto;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  transition: all 1250ms ease;
+  pointer-events: none;
+  opacity: 0;
+}
+/* .goal {
   display: flex;
   margin-left: 3vw;
   width: 100vw;
@@ -103,8 +115,34 @@ input[type="radio"] {
   border-top-left-radius: 2vw;
   border-bottom-left-radius: 2vw;
   transition: all 1250ms ease;
+} */
+.goal {
+  display: flex;
+  margin-left: 3vw;
+  width: 97vw;
+  background-color: var(--main-bg-item);
+  height: auto;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  transition: all 1250ms ease;
+  position: absolute;
+  z-index: 2;
+  top: 44px;
 }
 
+/* #goal-yes:checked ~ .goal {
+  display: flex;
+  margin-left: 3vw;
+  width: 100vw;
+  background-color: var(--main-bg-item);
+  height: auto;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  transition: all 1250ms ease;
+  position: absolute;
+  z-index: 2;
+  top: 44px;
+} */
 #goal-yes:checked ~ .goal .description-text,
 #goal-yes:checked ~ .goal .goal-description {
   transition: all 1250ms ease;
@@ -516,16 +554,17 @@ input[type="radio"] {
   /* transition: all 1550ms ease;
   transition-delay: 500ms; */
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* padding: 0 2.5vw 0 1vw; */
   animation: clues-text 1260ms forwards;
 }
 @keyframes clues-text {
   0% {
-    transform: scale(0.6);
-    opacity: 0;
+    /* transform: scale(0.6);
+    opacity: 0; */
   }
 
   15% {
-    display: none;
+    /* display: none; */
   }
   25% {
     padding-right: 3vw;
@@ -541,26 +580,26 @@ input[type="radio"] {
     /* padding-right: 9vw; */
     /* font-size: 2.5vw; */
     /* transform: scale(0.9); */
-    display: block;
-    opacity: 0;
+    /* display: block;
+    opacity: 0; */
   }
   100% {
     padding-right: 12vw;
     font-size: 2.6vw;
-    transform: scale(1);
-    opacity: 1;
+    /* transform: scale(1); */
+    /* opacity: 1; */
   }
 }
 .clues-text {
   display: flex;
-  font-size: 2.3vw;
+  font-size: 2.4vw;
   color: var(--main-color);
   padding: 0 2.5vw 0 1vw;
   text-align: left;
   align-items: center;
   opacity: 1;
   transition: all 1250ms ease;
-  animation: clues-text-2 1250ms ease;
+  /* animation: clues-text-2 1250ms ease; */
 }
 @keyframes clues-text-2 {
   0% {
@@ -586,7 +625,7 @@ input[type="radio"] {
 .clues-blob {
   position: relative;
   width: 100%;
-  max-width: 5vw;
+  max-width: 4vw;
   aspect-ratio: 1/1;
   margin-left: 5px;
   margin-right: 5px;
@@ -634,7 +673,7 @@ input[type="radio"] {
   width: 100%;
   height: 100%;
   margin-left: -0.4vw;
-  top: 0;
+  top: -1px;
   left: 0;
 }
 
